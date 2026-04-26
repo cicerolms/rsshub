@@ -1,6 +1,6 @@
-// Cloudflare Workers KV cache module
+/// <reference types="@cloudflare/workers-types" />
 
-import type { KVNamespace } from '@cloudflare/workers-types';
+// Cloudflare Workers KV cache module
 
 import { config } from '@/config';
 

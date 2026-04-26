@@ -1,8 +1,9 @@
+/// <reference types="@cloudflare/workers-types" />
+
 // Cloudflare Container Worker entry point
 // This Worker manages the RSSHub container lifecycle and proxies requests
 
 import { Container } from '@cloudflare/containers';
-import type { KVNamespace } from '@cloudflare/workers-types';
 
 const INSTANCE_COUNT = 20;
 

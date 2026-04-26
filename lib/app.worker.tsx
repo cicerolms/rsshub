@@ -1,8 +1,9 @@
+/// <reference types="@cloudflare/workers-types" />
+
 // Worker-specific app configuration
 // This is a simplified version of app-bootstrap.tsx for Cloudflare Workers
 // Heavy middleware and API routes are excluded
 
-import type { KVNamespace } from '@cloudflare/workers-types';
 import { Hono } from 'hono';
 import { jsxRenderer } from 'hono/jsx-renderer';
 import { trimTrailingSlash } from 'hono/trailing-slash';
