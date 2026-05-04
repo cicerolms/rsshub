@@ -48,7 +48,7 @@ importers:
         version: 2.0.0(hono@4.12.15)
       '@hono/zod-openapi':
         specifier: 1.3.0
-        version: 1.3.0(hono@4.12.15)(zod@4.3.6)
+        version: 1.3.0(hono@4.12.15)(zod@4.4.3)
       '@jocmp/mercury-parser':
         specifier: 3.0.7
         version: 3.0.7
@@ -284,8 +284,8 @@ importers:
         specifier: 17.0.1
         version: 17.0.1
       zod:
-        specifier: 4.3.6
-        version: 4.3.6
+        specifier: 4.4.3
+        version: 4.4.3
     devDependencies:
       '@actions/core':
         specifier: 3.0.1
@@ -4988,6 +4988,11 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
+  nanoid@3.3.12:
+    resolution: {integrity: sha512-ZB9RH/39qpq5Vu6Y+NmUaFhQR6pp+M2Xt76XBnEwDaGcVAqhlvxrl3B2bKS5D3NH3QR76v3aSrKaF/Kiy7lEtQ==}
+    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
+    hasBin: true
+
   nanoid@5.1.9:
     resolution: {integrity: sha512-ZUvP7KeBLe3OZ1ypw6dI/TzYJuvHP77IM4Ry73waSQTLn8/g8rpdjfyVAh7t1/+FjBtG4lCP42MEbDxOsRpBMw==}
     engines: {node: ^18 || >=20}
@@ -5307,6 +5312,10 @@ packages:
 
   postcss@8.5.10:
     resolution: {integrity: sha512-pMMHxBOZKFU6HgAZ4eyGnwXF/EvPGGqUr0MnZ5+99485wwW41kW91A4LOGxSHhgugZmSChL5AlElNdwlNgcnLQ==}
+    engines: {node: ^10 || ^12 || >=14}
+
+  postcss@8.5.13:
+    resolution: {integrity: sha512-qif0+jGGZoLWdHey3UFHHWP0H7Gbmsk8T5VEqyYFbWqPr1XqvLGBbk/sl8V5exGmcYJklJOhOQq1pV9IcsiFag==}
     engines: {node: ^10 || ^12 || >=14}
 
   postgres-array@2.0.0:
@@ -6187,11 +6196,12 @@ packages:
 
   uuid@3.4.0:
     resolution: {integrity: sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==}
-    deprecated: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+    deprecated: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
     hasBin: true
 
   uuid@8.3.2:
     resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
+    deprecated: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
     hasBin: true
 
   vali-date@1.0.0:
@@ -6515,8 +6525,8 @@ packages:
   zod@3.25.76:
     resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
 
-  zod@4.3.6:
-    resolution: {integrity: sha512-rftlrkhHZOcjDwkGlnUtZZkvaPHCsDATp4pGpuOOMDaTdDDXF91wuVDJoWoPsKX/3YPQ5fHuF3STjcYyKr+Qhg==}
+  zod@4.4.3:
+    resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
 
 snapshots:
 
@@ -6567,10 +6577,10 @@ snapshots:
 
   '@asamuzakjp/nwsapi@2.3.9': {}
 
-  '@asteasolutions/zod-to-openapi@8.5.0(zod@4.3.6)':
+  '@asteasolutions/zod-to-openapi@8.5.0(zod@4.4.3)':
     dependencies:
       openapi3-ts: 4.5.0
-      zod: 4.3.6
+      zod: 4.4.3
 
   '@babel/code-frame@7.29.0':
     dependencies:
@@ -7095,18 +7105,18 @@ snapshots:
     dependencies:
       hono: 4.12.15
 
-  '@hono/zod-openapi@1.3.0(hono@4.12.15)(zod@4.3.6)':
+  '@hono/zod-openapi@1.3.0(hono@4.12.15)(zod@4.4.3)':
     dependencies:
-      '@asteasolutions/zod-to-openapi': 8.5.0(zod@4.3.6)
-      '@hono/zod-validator': 0.7.6(hono@4.12.15)(zod@4.3.6)
+      '@asteasolutions/zod-to-openapi': 8.5.0(zod@4.4.3)
+      '@hono/zod-validator': 0.7.6(hono@4.12.15)(zod@4.4.3)
       hono: 4.12.15
       openapi3-ts: 4.5.0
-      zod: 4.3.6
+      zod: 4.4.3
 
-  '@hono/zod-validator@0.7.6(hono@4.12.15)(zod@4.3.6)':
+  '@hono/zod-validator@0.7.6(hono@4.12.15)(zod@4.4.3)':
     dependencies:
       hono: 4.12.15
-      zod: 4.3.6
+      zod: 4.4.3
 
   '@humanfs/core@0.19.2':
     dependencies:
@@ -8225,7 +8235,7 @@ snapshots:
       '@scalar/helpers': 0.5.2
       nanoid: 5.1.9
       type-fest: 5.6.0
-      zod: 4.3.6
+      zod: 4.4.3
 
   '@scure/base@2.0.0': {}
 
@@ -10943,6 +10953,8 @@ snapshots:
 
   nanoid@3.3.11: {}
 
+  nanoid@3.3.12: {}
+
   nanoid@5.1.9: {}
 
   napi-postinstall@0.3.4: {}
@@ -11311,6 +11323,12 @@ snapshots:
   postcss@8.5.10:
     dependencies:
       nanoid: 3.3.11
+      picocolors: 1.1.1
+      source-map-js: 1.2.1
+
+  postcss@8.5.13:
+    dependencies:
+      nanoid: 3.3.12
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
@@ -12376,7 +12394,7 @@ snapshots:
       esbuild: 0.27.7
       fdir: 6.5.0(picomatch@4.0.4)
       picomatch: 4.0.4
-      postcss: 8.5.10
+      postcss: 8.5.13
       rollup: 4.60.2
       tinyglobby: 0.2.16
     optionalDependencies:
@@ -12653,4 +12671,4 @@ snapshots:
 
   zod@3.25.76: {}
 
-  zod@4.3.6: {}
+  zod@4.4.3: {}
